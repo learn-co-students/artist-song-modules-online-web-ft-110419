@@ -11,6 +11,7 @@ class Song
 
     extend Findable::ClassMethods
     extend Memorable::ClassMethods
+      include Memorable::InstanceMethods
       include Paramable::InstanceMethods
       
   def self.all
